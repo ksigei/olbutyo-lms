@@ -1,1 +1,1 @@
-[teaching_blog].wsgi
+teaching_blog.wsgi
