@@ -1,1 +1,1 @@
-teaching_blog.wsgi
+web: gunicorn teaching_blog.wsgi 
