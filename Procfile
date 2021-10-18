@@ -1,1 +1,1 @@
-web: gunicorn olbboys.wsgi --log-file -
+teaching_blog.wsgi
