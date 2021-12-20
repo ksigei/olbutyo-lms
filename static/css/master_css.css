@@ -6,7 +6,8 @@ header,
 }
 
 #intro {
-    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://besthqwallpapers.com/Uploads/16-5-2020/132669/stack-of-books-blue-background-education-concepts-books-library.jpg")no-repeat center center fixed;
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/static/Images/principal.jpg")no-repeat center center fixed;
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -15,35 +16,38 @@ header,
 
 
 .bg-light{
-  background-color:transparent !important;
+  background-color: #020517 !important;
   transition:0.5s ease;
   }
 
 .bg-light.scrolled{
-  background-color: #b2ebf2 !important;
+  background-color: rgb(10, 2, 2) !important;
 }
 
 
 .navbar-light .navbar-nav .nav-link {
-    color: #ff5722;
+    color: #080e38;
 }
 
 .navbar-light .nav-link {
-    color: #ff5722;
+    color: #080e38;
 }
 
 
 .navbar-expand-lg {
-    background-color: #b2ebf2;
+    background-color: rgb(10, 2, 2);
   }
   @media (max-width: 768px) {
     .navbar:not(.top-nav-collapse) {
-      background-color: #b2ebf2;
+      background-color: rgb(10, 2, 2);
+    }
+    .navbar-nav{
+      background-color: #020412;
     }
   }
   @media (min-width: 800px) and (max-width: 850px) {
     .navbar:not(.top-nav-collapse) {
-      background-color: #b2ebf2;
+      background-color: rgb(10, 2, 2);
     }
   }
 
@@ -69,7 +73,7 @@ hr{
 }
 
 #event-section {
-    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://ak.picdn.net/shutterstock/videos/1012738781/thumb/1.jpg")no-repeat center center fixed;
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/static/Images/principal.jpg")no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -94,7 +98,7 @@ hr{
 }
 
 #page-intro {
-    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.communitiesinschools.org/media/filer_public/ff/13/ff135f2a-6c3b-4f2a-9db6-38635fe64dde/empty-desk.jpg")no-repeat center center fixed;
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/static/Images/principal.jpg")no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -114,10 +118,103 @@ ul.breadcrumb li {
   font-size: 18px;
 }
 
+
+.flex {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto
+}
+
+@media (max-width:991.98px) {
+  .padding {
+      padding: 1.5rem
+  }
+}
+
+@media (max-width:767.98px) {
+  .padding {
+      padding: 1rem
+  }
+}
+
+.padding {
+  padding: 5rem
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid #d2d2dc;
+  border-radius: 0
+}
+
+.card .card-body {
+  padding: 1.25rem 1.75rem
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem
+}
+
+.card .card-title {
+  color: #000000;
+  margin-bottom: 0.625rem;
+  text-transform: capitalize;
+  font-size: 0.875rem;
+  font-weight: 500
+}
+
+p {
+  font-size: 0.875rem;
+  margin-bottom: .5rem;
+  line-height: 1.5rem
+}
+
+.lightGallery {
+  width: 100%;
+  margin: 0
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px
+}
+
+.lightGallery .image-tile {
+  position: relative;
+  margin-bottom: 30px;
+  margin-right: 10px
+}
+
+.lightGallery .image-tile .demo-gallery-poster {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0
+}
+
+.lightGallery .image-tile .demo-gallery-poster img {
+  display: block;
+  margin: auto;
+  width: 40%;
+  max-width: 60px;
+  min-width: 20px;
+  margin-top: 80px
+}
+
 /* Add a slash symbol (/) before/behind each list item */
 ul.breadcrumb li+li:before {
   padding: 8px;
-  color: #ff5722;
+  color: rgb(255, 196, 0);
   content: "/\00a0";
 }
 
@@ -129,7 +226,7 @@ ul.breadcrumb li a {
 
 /* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
-  color: #b2ebf2;
+  color: rgb(10, 2, 2);
   text-decoration: underline;
 }
 

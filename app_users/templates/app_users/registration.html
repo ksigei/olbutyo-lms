@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% load crispy_forms_tags %}
-{% block title %}Register{% endblock %}
+{% block title %}Sign Up{% endblock %}
 
 {% block image_block %}
 <header class="info-header">
@@ -9,21 +9,19 @@
     <div class="row d-flex justify-content-center text-center">
       <div class="col-md-10 text-white">
         <!-- heading -->
-        <h2 class="display-4 font-weight-bold  p-5 " style="color:#ff5722;" > Registration </h2>
+        <h2 class="display-4 font-weight-bold  p-5 " style="color:rgb(209, 150, 22);" > Sign Up </h2>
         <div class="row d-flex justify-content-center text-center">
           <ul class="breadcrumb">
             <li><a href="{% url 'index' %}">Home</a></li>
-            <li class="disabled-text" >Registration</li>
+            <li class="disabled-text" >Sign Up</li>
           </ul>
         </div>
 
         <!-- divider -->
-        <hr style="color:#ff5722;">
+        <hr style="color:rgb(209, 150, 22);">
 
         <!-- description -->
-        <h4 class="white-text my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Deleniti
-                  consequuntur.</h4>
+        <h4 class="white-text my-4">Sign Up to access our numerous resources and services</h4>
   </div>
 </header>
 {% endblock %}
@@ -32,17 +30,12 @@
 {% block content %}
 
 <section class="text-center mt-4">
-              <h2 class="mb-5 font-weight-bold" style="color:#ff5722;">Registration</h2>
+              <h2 class="mb-5 font-weight-bold" style="color:rgb(209, 150, 22);">Sign Up with correct credentials</h2>
               <!-- class row for description-->
               <div class="row d-flex justify-content-center mb-4">
                 <!-- class column -->
                 <div class="col-md-8">
-                  <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptate
-                                    hic
-                                    provident nulla repellat
-                                    facere esse molestiae ipsa labore porro minima quam quaerat rem, natus repudiandae debitis
-                                    est
-                                    sit pariatur.</p>
+                 
                 </div>
               </div>
               <div class="row d-flex justify-content-center mb-4">
@@ -60,7 +53,7 @@
         {{ profile_form|crispy }}
         <div class="row justify-content-center">
         <div class="col-md-6">
-        <input type="submit" value="Register" class="btn btn-primary btn-block">
+        <input type="submit" value="Sign Up" class="btn btn-primary btn-block">
         </div>
         </div>
       </form>

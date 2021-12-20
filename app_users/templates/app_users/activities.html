@@ -1,0 +1,171 @@
+{% extends 'base.html'  %}
+{% load static %}
+{%block title %}Activities{% endblock%}
+
+{% block image_block%}
+
+{%endblock%}
+
+{% block content %}
+
+<main class="mt-5">
+ 
+    <div class="justify-content-center">
+
+      
+        <a href="{% url 'learn' %}"> <button type="button" class="btn btn-primary justify-content-center" style="color:rgb(221, 231, 231);border-color:rgb(209, 150, 22);">Learn Here</button> </a>
+      
+    </div>
+    <section class="my-5 bg-dark text-light">
+
+      <!-- Section heading -->
+      <h2 class="h1-responsive font-weight-bold text-center my-5 text-info" id="activities">Activities</h2>
+      <!-- Section description -->
+      <p class="lead grey-text text-center w-responsive mx-auto mb-5">As Olbutyo, we not only focus on acedemics but aslo participate in co-curricular activites.</p>
+
+         
+    
+      <!-- Grid row -->
+         <div class="row">
+    
+        <!-- Grid column -->
+        <div class="col-md-4 mb-md-0 mb-5">
+    
+          <!-- Grid row -->
+          <div class="row">
+    
+            <!-- Grid column -->
+            <div class="col-lg-2 col-md-3 col-2">
+              <i class="fas fa-book-open blue-text fa-2x"></i>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-lg-10 col-md-9 col-10">
+              <h4 class="font-weight-bold">Academics</h4>
+            
+              {% load static %}
+              <img src="{% static 'Images/comlab.jpg' %}" class="img-fluid" alt="academics">
+ 
+              <!-- {% load static %}<img src="{% static "Images/olb.jpg" %}" class="img-fluid" alt="academics" /> -->
+              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              <a class="btn btn-primary btn-sm">Learn more</a>
+            </div>
+            <!-- Grid column -->
+    
+          </div>
+          <!-- Grid row -->
+    
+        </div>
+        <!-- Grid column -->
+    
+        <!-- Grid column -->
+        <div class="col-md-4 mb-md-0 mb-5">
+    
+          <!-- Grid row -->
+          <div class="row">
+    
+            <!-- Grid column -->
+            <div class="col-lg-2 col-md-3 col-2">
+              <i class="fas fa-volleyball-ball purple-text fa-2x"></i>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-lg-10 col-md-9 col-10">
+              <h4 class="font-weight-bold">Sports</h4>
+              {% load static %}
+              <img src="{% static 'Images/lab.jpg' %}" class="img-fluid" alt="Sports">
+              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              <a class="btn btn-yellow btn-sm">Learn more</a>
+            </div>
+            <!-- Grid column -->
+    
+          </div>
+          <!-- Grid row -->
+    
+        </div>
+        <!-- Grid column -->
+    
+        <!-- Grid column -->
+        <div class="col-md-4">
+    
+          <!-- Grid row -->
+          <div class="row">
+    
+            <!-- Grid column -->
+            <div class="col-lg-2 col-md-3 col-2">
+              <i class="fas fa-theater-masks blue-text fa-2x"></i>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-lg-10 col-md-9 col-10">
+              <h4 class="font-weight-bold">Music And Drama</h4>
+            
+              {% load static %}
+              <img src="{% static 'Images/lab.jpg' %}" class="img-fluid" alt="Music and Drama">
+ 
+              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              <a class="btn btn-purple btn-sm">Learn more</a>
+            </div>
+            <!-- Grid column -->
+    
+          </div>
+          <!-- Grid row -->
+    
+        </div>
+        <!-- Grid column -->
+    
+     
+      <!-- Grid row -->
+    
+    </section>
+  </div>
+ <h2 class="h1-responsive font-weight-bold text-info text-center">KCSE Performance</h2>
+ <section id="container">
+  <table class="table">
+    <thead>
+      <tr class="table-info shadow">
+        <th scope="col" class="text-success lead">Year</th>
+        <th scope="col" class="text-info lead">Mean</th>
+        <th scope="col" class="text-primary lead">University</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="table-light">
+        <th scope="row">2020</th>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr class="table-secondary">
+        <th scope="row">2019</th>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr class="table-success">
+        <th scope="row">2018</th>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr class="table-danger">
+        <th scope="row">2017</th>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+      <tr class="table-warning">
+        <th scope="row">2016</th>
+        <td>Cell</td>
+        <td>Cell</td>
+      </tr>
+    </tbody>
+  </table>
+ 
+ </section>
+
+</main>
+
+{%endblock%}

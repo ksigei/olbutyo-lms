@@ -84,3 +84,23 @@ class ContactView(CreateView):
     model = Contact
     fields = '__all__'
     template_name = 'app_users/contact.html'
+
+class DepartmentsView(TemplateView):
+    template_name = 'app_users/departments.html'
+
+class GalleryView(TemplateView):
+    template_name = 'app_users/gallery.html'
+  
+class ActivitiesView(TemplateView):
+    template_name = 'app_users/activities.html'
+
+class LearnView(TemplateView):
+    template_name = 'app_users/learn.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        standards = Standard.objects.all()
+        teachers = UserProfileInfo.objects.filter(user_type='teacher')
+        context['standards'] = standards
+        context['teachers'] = teachers
+        return context

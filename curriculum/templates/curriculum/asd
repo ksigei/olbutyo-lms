@@ -1,6 +1,6 @@
 <!--
 <section class="text-center">
-              <h2 class="mb-0 mt-5 font-weight-bold" style="color:#ff5722;">Lecture Details</h2>
+              <h2 class="mb-0 mt-5 font-weight-bold" style="color:rgb(209, 150, 22);">Lecture Details</h2>
               <div class="row d-flex justify-content-center mb-3">
                 <blockquote class="blockquote mt-0">
                   <footer class="blockquote-footer">Created on {{lessons.created_at}} by <cite title="Source Title">{{lessons.created_by}}</cite></footer>
